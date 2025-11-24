@@ -1,0 +1,11 @@
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Core\bin\Debug\net8.0\HospitalManagementSystem.Core.deps.json
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Core\bin\Debug\net8.0\HospitalManagementSystem.Core.dll
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Core\bin\Debug\net8.0\HospitalManagementSystem.Core.pdb
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Core\obj\Debug\net8.0\HospitalManagementSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Core\obj\Debug\net8.0\HospitalManagementSystem.Core.AssemblyInfoInputs.cache
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Core\obj\Debug\net8.0\HospitalManagementSystem.Core.AssemblyInfo.cs
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Core\obj\Debug\net8.0\HospitalManagementSystem.Core.csproj.CoreCompileInputs.cache
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Core\obj\Debug\net8.0\HospitalManagementSystem.Core.dll
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Core\obj\Debug\net8.0\refint\HospitalManagementSystem.Core.dll
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Core\obj\Debug\net8.0\HospitalManagementSystem.Core.pdb
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Core\obj\Debug\net8.0\ref\HospitalManagementSystem.Core.dll

@@ -1,0 +1,15 @@
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\bin\Debug\net8.0\HospitalManagementSystem.Application.deps.json
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\bin\Debug\net8.0\HospitalManagementSystem.Application.dll
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\bin\Debug\net8.0\HospitalManagementSystem.Application.pdb
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\bin\Debug\net8.0\HospitalManagementSystem.Core.dll
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\bin\Debug\net8.0\HospitalManagementSystem.Core.pdb
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\obj\Debug\net8.0\HospitalManagementSystem.Application.csproj.AssemblyReference.cache
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\obj\Debug\net8.0\HospitalManagementSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\obj\Debug\net8.0\HospitalManagementSystem.Application.AssemblyInfoInputs.cache
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\obj\Debug\net8.0\HospitalManagementSystem.Application.AssemblyInfo.cs
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\obj\Debug\net8.0\HospitalManagementSystem.Application.csproj.CoreCompileInputs.cache
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\obj\Debug\net8.0\Hospital.BFFAC5B8.Up2Date
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\obj\Debug\net8.0\HospitalManagementSystem.Application.dll
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\obj\Debug\net8.0\refint\HospitalManagementSystem.Application.dll
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\obj\Debug\net8.0\HospitalManagementSystem.Application.pdb
+D:\code\Learn_C#\HospitalManagementSystem\HospitalManagementSystem.Application\obj\Debug\net8.0\ref\HospitalManagementSystem.Application.dll

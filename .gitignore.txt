@@ -1,0 +1,37 @@
+############################
+## Thư mục và File Build ##
+############################
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+
+# Khác
+# * là ký tự đại diện (wildcard)
+**/*.pdb
+**/*.resharper
+
+################################
+## Cấu hình IDE (Visual Studio) ##
+################################
+.vs/
+*.user
+*.suo
+# Cấu hình cá nhân
+*.userprefs
+# Cấu hình Rider IDE
+.idea/
+
+############################
+## Gói NuGet và Cache ##
+############################
+packages/
+*.nupkg
+
+################################
+## ⚠️ Cấu hình Nhạy cảm (BẢO MẬT) ⚠️ ##
+################################
+# TUYỆT ĐỐI KHÔNG ĐẨY file chứa chuỗi kết nối DB hoặc khóa API lên GitHub.
+# Các file cấu hình dành cho môi trường cục bộ (Development) thường chứa các bí mật này.
+**/appsettings.Development.json
+**/secrets.json
