@@ -10,7 +10,7 @@ namespace HospitalManagementSystem.Application.Features.Departments.Commands.Upd
     public class UpdateDepartmentCommand : IRequest
     {
         public long Id { get; set; } 
-        public string Name { get; set; }
+        public required string Name { get; set; }
         public string? Description { get; set; }
     }
 }

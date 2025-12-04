@@ -26,7 +26,16 @@ namespace HospitalManagementSystem.API.Controllers
         public async Task<IActionResult> CreateDepartment([FromBody] CreateDepartmentCommand command)
         {
             var departmentId = await _mediator.Send(command);
-            return StatusCode(201, new { DepartmentId = departmentId });
+            return CreatedAtAction(nameof(GetDepartmentById), 
+            new { id = departmentId }, new { DepartmentId = departmentId });
+        }
+
+
+        [HttpGet("{id}")]
+        public Task<IActionResult> GetDepartmentById(long id)
+        {
+            // Tạm thời return Ok() hoặc sau này sẽ implement Query
+            return Task.FromResult<IActionResult>(Ok());
         }
 
         [HttpGet] 

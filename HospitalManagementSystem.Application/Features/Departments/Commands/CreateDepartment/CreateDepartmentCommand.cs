@@ -9,7 +9,7 @@ namespace HospitalManagementSystem.Application.Features.Departments.Commands.Cre
 {
     public class CreateDepartmentCommand : IRequest<long>
     {
-        public string Name { get; set; }
+        public required string Name { get; set; }
         public string? Description { get; set; }
     }
 }

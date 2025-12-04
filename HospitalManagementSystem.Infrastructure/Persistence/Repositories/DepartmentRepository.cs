@@ -5,14 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using HospitalManagementSystem.Core.Entities;
 using HospitalManagementSystem.Core.Interfaces.Repositories;
-using HospitalManagementSystem.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 namespace HospitalManagementSystem.Infrastructure.Persistence.Repositories
 {
     public class DepartmentRepository : IDepartmentRepository
     {
-        public readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
         public DepartmentRepository(ApplicationDbContext context)
         {
             _context = context;
