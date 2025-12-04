@@ -12,5 +12,8 @@ namespace HospitalManagementSystem.Core.Interfaces.Repositories
     {
         Task<User> AddAsync(User user);
         Task<User?> GetByEmailAsync(string email);
+        Task<User?> GetByIdAsync(long id);
+        Task UpdateAsync(User user);
+
     }
 }

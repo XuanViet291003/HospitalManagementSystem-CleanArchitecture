@@ -12,7 +12,7 @@ namespace HospitalManagementSystem.Infrastructure.Persistence.Repositories
 {
     public class RoleRepository : IRoleRepository
     {
-        public readonly ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
         public RoleRepository(ApplicationDbContext context)
         {

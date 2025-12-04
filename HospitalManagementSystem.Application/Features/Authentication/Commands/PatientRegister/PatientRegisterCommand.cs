@@ -1,16 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MediatR;
-using HospitalManagementSystem.Application.DTOs.Users;  
 
-namespace HospitalManagementSystem.Application.Features.Users.Queries.Login
+namespace HospitalManagementSystem.Application.Features.Authentication.Commands.PatientRegister
 {
-    public class LoginQuery : IRequest<LoginResponseDto>
+    public class PatientRegisterCommand : IRequest<long>
     {
         public required string Email { get; set; }
         public required string Password { get; set; }
+        public required string FullName { get; set; }
     }
 }
+
+

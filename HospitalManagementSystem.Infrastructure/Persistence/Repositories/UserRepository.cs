@@ -33,5 +33,16 @@ namespace HospitalManagementSystem.Infrastructure.Persistence.Repositories
                 .FirstOrDefaultAsync(u => u.Email.ToLower() == email.ToLower());
         }
 
+        public async Task UpdateAsync(User user)
+        {
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<User?> GetByIdAsync(long id)
+        {
+            return await _context.Users.FindAsync(id);
+        }
+
     }
 }
