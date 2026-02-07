@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using HospitalManagementSystem.Application.DTOs.Doctors;
 using HospitalManagementSystem.Core.Interfaces.Repositories;
 using MediatR;
-using System.Threading;
 
 
 namespace HospitalManagementSystem.Application.Features.Doctors.Queries.GetDoctorById

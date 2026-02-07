@@ -29,13 +29,20 @@ namespace HospitalManagementSystem.Infrastructure.Persistence.Repositories
                 .FirstOrDefaultAsync(d => d.Id == id);
         }
 
-        public async Task<IReadOnlyList<Doctor>> GetByUserIdAsync(long userId)
+        public async Task<Doctor?> GetByUserIdAsync(long userId)
         {
             return await _context.Doctors
-                .Where(d => d.UserId == userId)
                 .Include(d => d.User)
                 .Include(d => d.Department)
-                .ToListAsync();
+                .FirstOrDefaultAsync(d => d.UserId == userId);
+        }
+
+        public async Task<Doctor?> GetByLicenseNumberAsync(string licenseNumber)
+        {
+            return await _context.Doctors
+                .Include(d => d.User)
+                .Include(d => d.Department)
+                .FirstOrDefaultAsync(d => d.LicenseNumber.ToLower() == licenseNumber.ToLower());
         }
 
         public async Task<IReadOnlyList<Doctor>> GetByDepartmentIdAsync(long departmentId)

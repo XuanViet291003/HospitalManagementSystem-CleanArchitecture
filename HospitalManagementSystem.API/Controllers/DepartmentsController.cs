@@ -2,11 +2,10 @@
 using HospitalManagementSystem.Application.Features.Departments.Commands.DeleteDepartment;
 using HospitalManagementSystem.Application.Features.Departments.Commands.UpdateDepartment;
 using HospitalManagementSystem.Application.Features.Departments.Queries.GetAllDepartments;
+using HospitalManagementSystem.Application.Features.Departments.Queries.GetDepartmentById;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading.Tasks;
 
 
 namespace HospitalManagementSystem.API.Controllers
@@ -32,10 +31,19 @@ namespace HospitalManagementSystem.API.Controllers
 
 
         [HttpGet("{id}")]
-        public Task<IActionResult> GetDepartmentById(long id)
+        [AllowAnonymous]
+        public async Task<IActionResult> GetDepartmentById(long id)
         {
-            // Tạm thời return Ok() hoặc sau này sẽ implement Query
-            return Task.FromResult<IActionResult>(Ok());
+            try
+            {
+                var query = new GetDepartmentByIdQuery { Id = id };
+                var department = await _mediator.Send(query);
+                return Ok(department);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return NotFound(new { Message = ex.Message });
+            }
         }
 
         [HttpGet] 

@@ -76,10 +76,18 @@ namespace HospitalManagementSystem.API.Controllers
 
         [HttpGet("{id}")]
         [Authorize]
-        public Task<IActionResult> GetAppointmentById(long id)
+        public async Task<IActionResult> GetAppointmentById(long id)
         {
-            // TODO: Implement GetAppointmentByIdQuery
-            return Task.FromResult<IActionResult>(Ok(new { Message = "Not implemented yet" }));
+            try
+            {
+                var query = new Application.Features.Appointments.Queries.GetAppointmentById.GetAppointmentByIdQuery { Id = id };
+                var appointment = await _mediator.Send(query);
+                return Ok(appointment);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return NotFound(new { Message = ex.Message });
+            }
         }
 
         [HttpGet("patient/{patientId}")]
