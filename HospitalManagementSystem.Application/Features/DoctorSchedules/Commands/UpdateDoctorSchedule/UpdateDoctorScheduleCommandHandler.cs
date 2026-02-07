@@ -1,5 +1,7 @@
 using HospitalManagementSystem.Core.Interfaces.Repositories;
 using MediatR;
+using HospitalManagementSystem.Core.Entities;
+using AutoMapper;
 
 namespace HospitalManagementSystem.Application.Features.DoctorSchedules.Commands.UpdateDoctorSchedule
 {
@@ -49,6 +51,12 @@ namespace HospitalManagementSystem.Application.Features.DoctorSchedules.Commands
                 var workDate = request.WorkDate ?? schedule.WorkDate;
                 var startTime = request.StartTime ?? schedule.StartTime;
                 var endTime = request.EndTime ?? schedule.EndTime;
+
+                var scheduleStart = workDate.Date.Add(startTime);
+                if (scheduleStart < DateTime.UtcNow)
+                {
+                    throw new InvalidOperationException("Không thể cập nhật lịch làm việc sang thời điểm trong quá khứ.");
+                }
 
                 var hasConflict = await _scheduleRepository.HasConflictingScheduleAsync(
                     schedule.DoctorId,

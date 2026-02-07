@@ -134,7 +134,7 @@ namespace HospitalManagementSystem.API.Controllers
                 return BadRequest(new { Message = ex.Message });
             }
         }
-
+    
         [HttpPost("{id}/complete")]
         [Authorize(Roles = "Doctor,Admin")]
         public async Task<IActionResult> CompleteAppointment(long id)

@@ -1,6 +1,7 @@
 using HospitalManagementSystem.Core.Entities;
 using HospitalManagementSystem.Core.Interfaces.Repositories;
 using MediatR;
+using AutoMapper;
 
 namespace HospitalManagementSystem.Application.Features.DoctorSchedules.Commands.CreateDoctorSchedule
 {
@@ -30,6 +31,13 @@ namespace HospitalManagementSystem.Application.Features.DoctorSchedules.Commands
             {
                 throw new InvalidOperationException("Thời gian kết thúc phải sau thời gian bắt đầu.");
             }
+
+            var scheduleStart = request.WorkDate.Date.Add(request.StartTime);
+            if (scheduleStart < DateTime.UtcNow)
+            {
+                throw new InvalidOperationException("Không thể tạo lịch làm việc trong quá khứ.");
+            }
+
 
             // Check for conflicting schedules
             var hasConflict = await _scheduleRepository.HasConflictingScheduleAsync(
